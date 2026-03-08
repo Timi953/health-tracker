@@ -2,11 +2,16 @@
   "version": "0.0.1",
   "configurations": [
     {
-      "name": "health-tracker",
-      "runtimeExecutable": "npm",
-      "runtimeArgs": ["run", "dev"],
-      "port": 3000,
-      "cwd": "C:/Projects/health-tracker"
+      "name": "health-tracker-dev",
+      "runtimeExecutable": "cmd",
+      "runtimeArgs": ["/c", "npm run dev"],
+      "port": 3000
+    },
+    {
+      "name": "health-tracker-prod",
+      "runtimeExecutable": "cmd",
+      "runtimeArgs": ["/c", "npm run start"],
+      "port": 3000
     }
   ]
 }
